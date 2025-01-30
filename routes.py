@@ -4,7 +4,7 @@ from models import db, User, Book, Review
 api_routes = Blueprint('api', __name__)
 
 
-@api_routes.route('/', methods=['GET'])
+@api_routes.route('/')
 def home():
     return jsonify({"message": "Welcome to the Personal Library API!"})
 
